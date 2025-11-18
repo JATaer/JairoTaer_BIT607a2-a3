@@ -1,0 +1,12 @@
+# Basic Authentication Configuration
+AuthType Basic
+AuthName "Restricted Staff Area"
+
+# Path to the .htpasswd file. 
+# IMPORTANT: This path must be the full, absolute path on your web server.
+# It cannot be a relative path. You will need to get this from your web host.
+# Example path (will not work): /home/yourusername/public_html/staff/.htpasswd
+AuthUserFile /full/path/to/your/.htpasswd
+
+# Require a valid user from the .htpasswd file
+Require valid-user
